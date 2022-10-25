@@ -1,0 +1,99 @@
+--------------------------------------------------------JAVA---------------------------------------------------------------
+O nome da class tem que ter o mesmo nome do arquivo, tem que ser coerente com o projeto que você almeja ou o resultado;
+		|
+public class NomeDoArquivo {
+
+}
+obs: a primeira letra da classe, por padrão, deve iniciar com letra maiuscula;
+
+Se a classe é uma classe executavel, se ela tem a capacidade de realizar uma inicialização do projeto ou de forma independen
+ela precisa ter um metodo principal "main";
+
+obs: Isso é um método:
+		|
+public static void main(String [] args) {
+
+	Tudo que for escrivo aqui estará dentro desse método, no caso:
+		
+		System.out.print("Escreva sua mensagem");
+	
+}
+ [] -> Arrays
+ args -> Argumentos
+ Class -> System
+ out -> Saída
+ print -> Imprima
+ obs: Tem que ter o ';' para o java funcionar;
+
+- No nome do Arquivo deve ser utilizado o Camel Case, no caso, iniciar com maiusculo: "MinhaCalculadora.java"
+
+Variável -> dever ser escrita com letra minuscula: "nome" 
+--Mas se for composto dever escrita primeira letra da primeira palavra minuscula e a primeira letra da segunda palavra em
+maiuscula: "meuNome"
+
+- Se for colocado a palavra toda em maiuscula, ela não pode ser alterada: String BR = "Brazil"
+- E se tivar a palavra "final" antes da variável, significa que ela não pode ser alterada, também, mesmo se estiver em minusculo: final String br = "Brasil"
+
+
+- Deve conter apenas letras, _ (underline), $ ou os números de 0 a 9;
+- Deve obrigatoriamente se iniciar por uma letra (preferencialmente), _ ou $, jamais com número;
+- Deve iniciar com uma letra minúscula (boa prática – ver abaixo);
+- Não pode conter espaços;
+- Não podemos usar palavras-chave da linguagem;
+- O nome deve ser único dentro de um escopo. 
+
+Toda variável tem que ter -> Tipo NomeBemDefinido = Atribuicao (opcional em alguns casos)
+
+// Exemplo
+
+public static void main(String [] args){
+
+int idade = 23;
+double altura = 1.62;
+Dog spike; //observe que aqui a variável spike não tem valor, é normal
+}
+
+-----Tipos-----
+
+String => Imprime palavras: Qual o meu nome?;
+int => Imprime números inteiros: 2;
+double => Imprime numeros reais: 2.5;
+float => Também números reais, mas com uma quantidade menor de bytes;
+booleans => Imprime "Verdadeiro" e "Falso": false and True
+
+-----Tipo Método----
+
+TipoRetorno NomeObjetivoNoInfinitivo Parametro(s)
+
+//Exemplo
+public MinhaClasse{
+
+public static void main(String [] args){
+
+	String primeiroNome = "Samuel"
+	String segundoNome = "Sansão"
+}
+--------Método-------
+
+public static String nomeCompleto(String primeiroNome, String segundoNome){
+	return primeiroNome.concat(" ").concat(segundoNome);
+
+}
+
+}
+obs: Todo método tem os seus parâmetros: nomeCompleto (pararametro) -> (String primeiroNome, String segundoNome)
+return -> É uma palavra reservada, significa que ela retornará alguma coisa;
+concat -> É uma power class;
+
+------Identação------
+
+Basicamente indentar é um termo utilizado para escrever o código do programa de forma hierárquica, facilitando assim
+ a visualização e o entendimento do programa.
+
+no Visual Studio code código para identação automática
+Alt + Shift + f;
+
+------Organizando arquivos-----
+
+À medida que nosso sistema vai evoluindo, surgem novos arquivos (código fonte) em nossa estrutura de arquivos do projeto.
+Isso exige que seja realizado uma organização destes arquivos através de pacotes (packages).
