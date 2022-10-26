@@ -196,4 +196,7 @@ public class MyClass {
 	public void gravar(Cliente cliente){}
 }
 
+->SmartTv smartTv = new SmartTv();<-
+obs: Forma de criar uma classe para ilustrar a interação dos métodos e atributos e assim sucessivamente.
+
  
