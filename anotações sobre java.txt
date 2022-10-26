@@ -60,6 +60,7 @@ int => Imprime números inteiros: 2;
 double => Imprime numeros reais: 2.5;
 float => Também números reais, mas com uma quantidade menor de bytes;
 booleans => Imprime "Verdadeiro" e "Falso": false and True
+char => Imprime uma letra: 'M';
 
 -----Tipo Método----
 
@@ -97,3 +98,102 @@ Alt + Shift + f;
 
 À medida que nosso sistema vai evoluindo, surgem novos arquivos (código fonte) em nossa estrutura de arquivos do projeto.
 Isso exige que seja realizado uma organização destes arquivos através de pacotes (packages).
+
+------Operadores------
+
+São simbolos especiais que utilizam para operações e expressões matemáticas ou simbolos especiais que tem um significado
+próprio para a linguagem e estão assosciados a determinadas operações;
+- Operador de atribuição => "=" Aplicar uma atribuição a uma variével: int nome recebe(=) 10;
+
+----- Operadores aritméticos-----
+
+"+" -> soma 
+"-" -> subtração 
+"==" -> sinal de igual 
+"*" -> multiplicação 
+"/" -> divisão 
+"%" -> resto de uma divisão
+
+----- Operadores unários-----
+
+(+) Operador unário de valor positivo – números são positivos sem esse operador explicitamente;
+(-) Operador unário de valor negativo – nega um número ou expressão aritmética;
+(++) Operador unário de incremento de valor – incrementa o valor em 1 unidade;
+(--) Operador unário de decremento de valor – decrementa o valor em 1 unidade;
+(!) Operador unário lógico de negação – nega o valor de uma expressão booleana.
+
+------ Operadores relacionais----- 
+
+"++": número = 1 => numero = numero + 1 => numero++ => numero = 2
+"--": número = 1 => numero = numero - 1 => numero-- => numero = 0
+- "==" Quando desejamos verificar se uma variável é IGUAL A outra.
+- "!=" Quando desejamos verificar se uma variável é DIFERENTE da outra.
+- ">" Quando desejamos verificar se uma variável é MAIOR QUE a outra.
+- ">=" Quando desejamos verificar se uma variável é MAIOR OU IGUAL a outra.
+- "<" Quando desejamos verificar se uma variável é MENOR QUE outra.
+- "<=" Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.
+
+----- Operadores lógicos-----
+
+- &&  Operador Lógico "E": if(numero1 == 2 & numero2 ++ == 2 )
+- || Operador Lógico "OU": if(numero1 == 2 || numero2 ++ == 2 )
+
+-----Operadores ternários-----
+
+<Expressão Condicional> ? <Caso condição seja true> : 
+<Caso condição seja false>
+
+// EXEMPLO: String resultado = (a==b) ? "verdadeiro" : "false";
+obs: "?" é o "if" e o ":" é else;
+
+
+obs: O sinal de "+" em um texto, é uma concatenação;
+
+-----Estruturação de Métodos------
+
+Uma classe é definida por atributos e métodos. Já vimos que atributos são, em sua
+grande maioria, variáveis de diferentes tipos e valores. Os métodos, por sua vez, 
+correspondem a funções ou sub-rotinas disponíveis dentro de nossas classes.
+
+OBS:  Caso o método não retorne nenhum valor, ele será representado pela palavra-chave void.
+
+//Exemplo
+public class MyClass {
+	
+	public double somar(int num1, int num2){
+		//LOGICA - FINALIDADE DO MÉTODO
+		return ... ;
+	}
+	
+	public void imprimir(String texto){
+		//LOGICA - FINALIDADE DO MÉTODO
+		//AQUI NÃO PRECISA DO RETURN
+		//POIS NÃO SERÁ RETORNADO NENHUM RESULTADO
+	}
+	// throws Exception : indica que o método ao ser utilizado
+	// poderá gerar uma exceção
+	public double dividir(int dividendo, int divisor) throws Exception{}
+	
+	// este método não pode ser visto por outras classes no projeto
+	private void metodoPrivado(){}
+	
+	//alguns equívocos estruturais
+	public void validar(){
+		//este método deveria retornar algum valor
+		//no caso boolean (true ou false)
+	}
+	public void calcularEnviar(){
+		//um método deve representar uma única responsabilidade
+	}
+	public void gravarCliente(String nome, String cpf, Integer telefone, ....){
+		//este método tem a finalidade de gravar
+		//informações de um cliente, por que não criar
+		//um objeto cliente e passar como parâmetro ?
+		//veja abaixo
+	}
+	public void gravarCliente(Cliente cliente){}
+	//ou
+	public void gravar(Cliente cliente){}
+}
+
+ 
