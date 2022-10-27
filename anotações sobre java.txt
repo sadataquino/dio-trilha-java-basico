@@ -450,9 +450,9 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 * <b>Note:</b> Leia atentamente a documentação desta classes
 * para desfrutar dos recursos oferecidos pelo autor
 *
-* @author  Gleyson Sampaio
+* @author  Sadat Aquino
 * @version 1.0
-* @since   01/01/2022
+* @since   27/10/2022
 */
 public class Calculadora {
     /**

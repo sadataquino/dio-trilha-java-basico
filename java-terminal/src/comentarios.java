@@ -24,7 +24,7 @@ public class comentarios {
         // se não soma mesmo
         r = n + x;
     }
-    return r;
+    return r; 
 }
 
     /**
